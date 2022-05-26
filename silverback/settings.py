@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*y2ut*)p2199#bw7v)hw0n@k4&i#d_rym-!+tq#1)^q3ll)+dk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0','arcane-woodland-76985.herokuapp.com']
 
 
 # Application definition
@@ -77,9 +77,10 @@ WSGI_APPLICATION = 'silverback.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR,'db.sqlite3')
-       
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydb',
+        'USER':'steve',
+        'PASSWORD':'davinci'
     }
 }
 
