@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+
+    <p>{{teacher.fname}}</p>
+    <img src="{{teacher.image.url}}" alt="This is an Image" srcset="">
+
+
+    <h4>This is an html file</h4>
+</body>
+<form action="{% url 'search_results' %}" method="post">
+
+    <label for="name">Name</label>
+    <input type="text" placholder="name" name="name">
+    <label for="name">department head</label>
+    <input type="text" placholder="dep_head" name="dep_head">
+    <label for="name">department Id</label>
+    <input type="text" placholder="dept_id" name="dept_id">
+    <input type="submit" value="Search">
+
+
+</form>
+
+
+</html>
